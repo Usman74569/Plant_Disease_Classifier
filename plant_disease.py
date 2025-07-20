@@ -32,7 +32,7 @@ if uploaded_file is not None:
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
     # Preprocess image
-    img_resized = image.resize((128, 128)) ` # Change to your model's input shape
+    img_resized = image.resize((128, 128))  # Change to your model's input shape
     img_array = np.array(img_resized) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
 
