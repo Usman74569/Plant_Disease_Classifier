@@ -1,53 +1,55 @@
-
 # 🌿 Plant Disease Classifier using CNN
 
-This project is a deep learning-based classifier that detects plant diseases from leaf images. It includes model training, saving the trained model and label file, and a script (likely used in Streamlit) for prediction.
+This project is a deep learning-based classifier that detects plant diseases from leaf images. It includes model training, saving the trained model and label file, and a script (compatible with Streamlit) for prediction.
 
 ---
 
 ## 📁 Project Structure
 
 ```
-
-Plant\_Disease\_Classifier/
-├── Plant\_Disease\_Classifier/
-│   ├── Plant\_disease\_prediction\_using\_CNN.ipynb   # Model training notebook
-│   ├── class labels.json                          # Label names file
-│   ├── plant\_disease.py                           # Prediction or Streamlit script
-│   ├── plant\_disease\_model.keras                  # Saved Keras model
+Plant_Disease_Classifier/
+├── Plant_Disease_Classifier/
+│   ├── Plant_disease_prediction_using_CNN.ipynb   # Model training notebook
+│   ├── class_labels.json                          # Label names file
+│   ├── plant_disease.py                           # Prediction / Streamlit script
+│   ├── plant_disease_model.keras                  # Saved Keras model
 │   ├── requirements.txt                           # Required packages
-├── test\_images/                                   # Folder of sample test images
-├── README.md                                      # Project overview (this file)
-
-````
+├── test_images/                                   # Sample test images
+├── README.md                                      # Project overview
+```
 
 ---
 
 ## 🔧 How the Code Works
 
 ### 1. Training the Model (`Plant_disease_prediction_using_CNN.ipynb`)
-- This notebook is used to:
-  - Load and preprocess the dataset directly imported from Kaggle
-  - Build and train a CNN model
-  - Save the trained model to `plant_disease_model.keras`
-  - Save the label map to `class labels.json`
+
+This notebook is used to:
+
+* Load and preprocess the dataset (imported from Kaggle)
+* Build and train a CNN model
+* Save the trained model to `plant_disease_model.keras`
+* Save the label map to `class_labels.json`
 
 ### 2. Prediction (`plant_disease.py`)
-- This script:
-  - Loads the saved `.keras` model and `class labels.json`
-  - Accepts input image
-  - Preprocesses and predicts the plant disease
-  - Can be used in a web app (e.g., Streamlit)
+
+This script:
+
+* Loads the saved `.keras` model and `class_labels.json`
+* Accepts an input image
+* Preprocesses the image and predicts the plant disease
+* Can be used in a web app (e.g., Streamlit)
 
 ---
 
 ## ▶️ How to Use
 
 ### Step 1: Clone the Repository
+
 ```bash
-git clone https://github.com/yourusername/Plant_Disease_Classifier.git
+git clone https://github.com/Usman74569/Plant_Disease_Classifier.git
 cd Plant_Disease_Classifier
-````
+```
 
 ### Step 2: Install Dependencies
 
@@ -62,17 +64,19 @@ pip install -r Plant_Disease_Classifier/requirements.txt
 
 ### Step 4: Run the Prediction Script or App
 
-* If using Streamlit:
+* **Using Streamlit:**
 
 ```bash
 streamlit run Plant_Disease_Classifier/plant_disease.py
 ```
 
-* If it’s a CLI script:
+* **Using CLI (Python script):**
 
 ```bash
-python Plant_Disease_Classifier/plant_disease.py
+python Plant_Disease_Classifier/plant_disease.py --image test_images/sample1.jpg
 ```
+
+> Note: Replace `sample1.jpg` with your image file name.
 
 ---
 
@@ -83,12 +87,21 @@ Main dependencies (see full list in `requirements.txt`):
 * Python 3.x
 * TensorFlow / Keras
 * NumPy
-* Streamlit (if using as a web app)
 * Pillow
+* Streamlit (if using as a web app)
+
+> Optional: Specify versions for reproducibility:
+
+```
+TensorFlow >= 2.12
+numpy >= 1.24
+Pillow >= 9.0
+streamlit >= 1.30
+```
 
 ---
 
-## 📁 test\_images
+## 📁 test_images
 
 This folder contains sample leaf images for testing the prediction script or Streamlit app.
 
@@ -105,7 +118,7 @@ This folder contains sample leaf images for testing the prediction script or Str
 
 ## 🙋‍♂️ Author
 
-Usman Syed
+**Usman Syed**
 Civil Engineering Student
 Exploring AI for real-world applications 🌿
 
@@ -113,8 +126,11 @@ Exploring AI for real-world applications 🌿
 
 ## 📌 Notes
 
-* Keep model file and label file in the same directory as your app script.
+* Keep the model file and label file in the same directory as your app script.
 * You can retrain the model anytime using the notebook.
-* Consider deploying your Streamlit app on Streamlit Cloud or Hugging Face Spaces.
+* Consider deploying your Streamlit app on **Streamlit Cloud** or **Hugging Face Spaces**.
 
-```
+---
+
+
+Do you want me to do that?
