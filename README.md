@@ -1,6 +1,6 @@
 # 1) AI capstone Agriculture Land classification
 
-This project is a deep learning model trained to classify lands into agricultural vs non agricultural using a CNN with Keras and pytorch seperately.
+End-to-end pipeline that trains, evaluates and compares CNN & Hybrid Vision-Transformer models in both Keras and PyTorch to classify satellite images as agricultural vs non-agricultural land.
 
 ============================================================
 
@@ -9,3 +9,4 @@ This project is a deep learning model trained to classify lands into agricultura
 This project is a deep learning model trained to classify plant diseases using a CNN built with TensorFlow/Keras.
 
 # Both are colab notebooks
+
